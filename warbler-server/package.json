@@ -1,0 +1,38 @@
+{
+  "name": "warbler-server",
+  "version": "1.0.0",
+  "description": "Twitter Clone",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mohammed-Alkabsh/warbler.git"
+  },
+  "keywords": [
+    "Twitter",
+    "clone",
+    "React",
+    "Redux",
+    "Node",
+    "Express",
+    "MongoDB",
+    "MERN",
+    "FullStack"
+  ],
+  "author": "Mohammed Alkabsh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mohammed-Alkabsh/warbler/issues"
+  },
+  "homepage": "https://github.com/Mohammed-Alkabsh/warbler#readme",
+  "dependencies": {
+    "bcrypt": "^4.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.2",
+    "nodemon": "^2.0.2"
+  }
+}
