@@ -1,7 +1,9 @@
+require("dotenv").config();
 const express = require("express");
 const app = express();
 const cors = require("cors");
 const errorHandler = require("./handlers/error");
+const authRoutes = require("./routes/auth");
 
 
 const PORT = 8081;
@@ -9,6 +11,7 @@ const PORT = 8081;
 app.use(cors());
 app.use(express.json());
 
+app.use("/api/auth", authRoutes);
 
 //all my routes here - they will come later
 app.use(function(req, res, next){
