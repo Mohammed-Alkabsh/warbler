@@ -22,12 +22,12 @@ const userSchema = new mongoose.Schema({
   messages: [
     {
       type: mongoose.Schema.Types.ObjectId,
-      ref: "User"
+      ref: "Message"
     }
   ]
 });
 
-userSchema.pre("save", async function(req, res, next) {
+userSchema.pre("save", async function(next) {
   try {
     if (!this.isModified("password")) {
       return next();

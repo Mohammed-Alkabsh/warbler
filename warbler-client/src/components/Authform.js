@@ -24,7 +24,7 @@ export default class Authform extends Component {
         const authType = this.props.signUp ? "signup" : "signin";
         this.props.onAuth(authType, this.state).then(() => {
             console.log("logged in");
-        })
+        });
     }
 
     render() {
