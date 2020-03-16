@@ -11,8 +11,9 @@ class MessageList extends Component {
 
     render(){
         const { messages } = this.props;
+        console.log(messages)
         let MessageList = messages.map((msg, index) => (
-            <MessageItem key={msg._id} date={msg.createAt} text={msg.text} profileImageUrl={msg.user.profileImageUrl}/>
+            <MessageItem key={msg._id} date={msg.createAt} username={msg.user.username} text={msg.text} profileImageUrl={msg.user.profileImageUrl}/>
         ))
         return (
             <div className="row col-lg-8 col-sm-12">

@@ -14,6 +14,7 @@ const MessageItem = ({ date, profileImageUrl, text, username }) => (
                         {date}
                     </Moment>
                 </span>
+                <p>{text}</p>
             </div>
         </li>
     </div>
