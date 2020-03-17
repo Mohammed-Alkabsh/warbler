@@ -20,7 +20,7 @@ class Navbar extends Component {
                         <h4>Warbler</h4>
                     </Link>
                     {currentUser.isAuthenticated ? (
-                        <ul className="nav-bar-nav navbar-right">
+                        <ul className="nav navbar-nav navbar-right">
                             <li className="nav-item">
                                 <Link to={`/users/${currentUser.user.id}/messages/new`}>New Message</Link>
                             </li>

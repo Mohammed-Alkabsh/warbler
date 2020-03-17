@@ -17,7 +17,6 @@ const Homepage = ({currentUser}) => {
     }else {
         return (
             <div className="news-feed">
-                <h1>You made it</h1>
                 <MessageTimeLine profileImageUrl={currentUser.user.profileImageUrl} username={currentUser.user.username} />
             </div>
         )

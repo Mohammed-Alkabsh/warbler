@@ -23,7 +23,6 @@ class MessageForm extends Component {
         } catch (error) {
             return dispatch => {
                 dispatch(addError(error.message));
-                console.log(error)
             }
         }
     }
@@ -35,7 +34,7 @@ class MessageForm extends Component {
                     <div className="alert alert-danger">{this.props.errors}</div>
                 )}
                 <input type="text" className="form-control" name="text" value={this.state.message} onChange={e => this.setState({message: e.target.value})} />
-                <button type="submit">
+                <button className="btn btn-primary" type="submit">
                     Add my message
                 </button>
             </form>
